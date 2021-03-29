@@ -1,0 +1,187 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Farid} % Your first name
+\familyname{Ouhmich} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Research Engineer in medical imaging and deep learning}
+\address{1 rue Sleidan}{67000 Strasbourg}{France}
+\mobile{(+33) 6.37.66.20.25}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{farid.ouhmich@hotmail.fr}
+\homepage{https://fr.linkedin.com/pub/farid-ouhmich/106/272/69}{LinkedIn} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+\photo[50pt][0.4pt]{pictures/linkedin} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+\quote{A meticulous and voluntary PhD candidate with in-depth deep learning and medical imaging knowledge who always wants to discover new things and accepts all challenges he will encounter. }
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+%
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+%
+%\makelettertitle % Print letter title
+%
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+%
+%\makeletterclosing % Print letter signature
+%
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2017 -- now}{PhD candidate in Computer Science}{Institute of Image-Guided Surgery}{Strasbourg}{}{New radiomics approaches for hepatic tumor characterization through imaging analysis \\ Machine/Deep Learning -- Computer graphics -- Semantic Segmentation --  Medical Imaging \\
+Teaching at University of Strasbourg (Networking and Data structure programming in C)
+ }
+\cventry{2011 -- 2016}{Master Degree in Computer Science}{University of Strasbourg }{Strasbourg}{Graduation with honors June 2016}{Specialization in Computer Graphics \\ Top of the class}  % Arguments not required can be left empty
+\cventry{June 2011}{Baccalaureate in Science}{Lyc\'ee Marie Curie}{Strasbourg}{}{}
+
+%\section{PhD Thesis}
+%
+%\cvitem{Title}{\emph{New radiomics approaches for hepatic tumor characterization through imaging analysis}}
+%\cvitem{Supervisors}{Professor Fabrice Heitz \& Associate Head of Research Vincent Noblet}
+%\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{2016 - 2017}{Computer science engineer}{ICube - CNRS}{Strasbourg}{}{
+Developed a tool to convert MRI data into Nifti or Dicom images \\ Worked on odil library (Developed by Julien Lamy) -- Python \& C++}
+
+%------------------------------------------------
+
+\cventry{Jan - Jul 2016}{Intern}{Ircad France}{Strasbourg}{}{Worked on the Fw4spl framework : support the
+deformation of a perfusion map for an augmented reality application.
+}
+
+\cventry{Jun - Jul 2014}{Summer Intern}{ICube - IMIS team}{Strasbourg}{}{Contributed to the deployment of projects carried out by the team thanks to automation tools such as Jenkins \\ Developed Unit Test in C++
+}
+
+%------------------------------------------------
+
+\subsection{Miscellaneous}
+
+
+\cventry{2020}{}{}{}{}{Worked in an ''Out-of-Covid`` solution developed by the IHU in collaboration with the French medical insurance to track the evolution of positive number cases and related symptoms \\ Fast API -- Python}
+
+\cventry{2018}{}{Hacking Health Camp}{}{}{Developed an automatic image-based french sign language translator \\ C++ -- Python -- Deep-Learning -- Tensorflow -- Computer Graphics}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2016}{Master Degree - Top of the class}
+\cvitem{2018}{Hacking Health Camp - \textit{Best potential for sucess} - Face2Sign: Image-based sign langage translator}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
+\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
+\cvitem{Advanced}{Computer Hardware and Support}
+
+%----------------------------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Communication Skills}
+
+\cvitem{2010}{Oral Presentation at the California Business Conference}
+\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{English}{Mothertongue}{}
+\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Piano}{Chess}
+\cvlistdoubleitem{Cooking}{Dancing}
+\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
