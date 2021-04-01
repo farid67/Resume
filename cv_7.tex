@@ -31,8 +31,8 @@
 
 \usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
 
-\usepackage[scale=0.85]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\usepackage[scale=0.8]{geometry} % Reduce document margins
+\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
 %%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
@@ -87,13 +87,14 @@
 
 \makecvtitle % Print the CV title
 
+\vspace{-0.5cm}
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\cventry{2017 -- now}{PhD candidate in Computer Science}{Institute of Image-Guided Surgery}{Strasbourg}{}{New radiomics approaches for hepatic tumor characterization through imaging analysis \\ Machine/Deep Learning -- Computer graphics -- Semantic Segmentation --  Medical Imaging \\
+\cventry{2017 -- present}{PhD candidate in Computer Science}{Institute of Image-Guided Surgery}{Strasbourg}{}{Title: "New radiomics approaches for hepatic tumor characterization through imaging analysis" \\ Machine/Deep Learning -- Computer graphics -- Semantic Segmentation --  Medical Imaging \\
 Teaching at University of Strasbourg (Networking and Data structure programming in C)
  }
 \cventry{2011 -- 2016}{Master Degree in Computer Science}{University of Strasbourg }{Strasbourg}{Graduation with honors June 2016}{Specialization in Computer Graphics \\ Top of the class}  % Arguments not required can be left empty
@@ -105,6 +106,8 @@ Teaching at University of Strasbourg (Networking and Data structure programming 
 %\cvitem{Supervisors}{Professor Fabrice Heitz \& Associate Head of Research Vincent Noblet}
 %\cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
 
+\vspace{1cm}
+
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
@@ -112,15 +115,15 @@ Teaching at University of Strasbourg (Networking and Data structure programming 
 \section{Experience}
 
 \cventry{2016 - 2017}{Computer science engineer}{ICube - CNRS}{Strasbourg}{}{
-Developed a tool to convert MRI data into Nifti or Dicom images \\ Worked on odil library (Developed by Julien Lamy) -- Python \& C++}
+Developed a tool to convert MRI data into Nifti or Dicom images (dicomifier) \\ Worked on the odil library (Developed by Julien Lamy) \\ Medical images storage with PACS machine communication (dcmtk) \\ \textbf{Python} \& \textbf{C++}}
 
 %------------------------------------------------
 
-\cventry{Jan - Jul 2016}{Intern}{Ircad France}{Strasbourg}{}{Worked on the Fw4spl framework : support the
-deformation of a perfusion map for an augmented reality application.
+\cventry{Jan - Jul 2016}{Intern}{Ircad France}{Strasbourg}{}{Worked on the Fw4spl framework: support the
+deformation of a perfusion map for an augmented reality application. \\ Extraction of features on video frames, then computation of deformation field using features tracking techniques (Optical Flow, Template Matching), before deforming the perfusion map using a real-time GPU implementation (shader)\\ \textbf{C++}, \textbf{Ogre}, \textbf{OpenCV}, \textbf{GPU programming (shader)}, \textbf{OpenGL}, \textbf{Qt}
 }
 
-\cventry{Jun - Jul 2014}{Summer Intern}{ICube - IMIS team}{Strasbourg}{}{Contributed to the deployment of projects carried out by the team thanks to automation tools such as Jenkins \\ Developed Unit Test in C++
+\cventry{Jun - Jul 2014}{Summer Intern}{ICube - IMIS team}{Strasbourg}{}{Contributed to the deployment of projects carried out by the team thanks to automation tools such as Jenkins \\ Developed Unit Test in \textbf{C++}
 }
 
 %------------------------------------------------
@@ -128,37 +131,44 @@ deformation of a perfusion map for an augmented reality application.
 \subsection{Miscellaneous}
 
 
-\cventry{2020}{}{}{}{}{Worked in an ''Out-of-Covid`` solution developed by the IHU in collaboration with the French medical insurance to track the evolution of positive number cases and related symptoms \\ Fast API -- Python}
+\cventry{2020}{}{}{}{}{Worked in a web-based ''Out-of-Covid`` solution developed by the IHU in collaboration with the French medical insurance to track the evolution of positive number cases and related symptoms \\ \textbf{Fast API} -- \textbf{Javascript} -- \textbf{Python} -- \textbf{OpenEhr}}
 
-\cventry{2018}{}{Hacking Health Camp}{}{}{Developed an automatic image-based french sign language translator \\ C++ -- Python -- Deep-Learning -- Tensorflow -- Computer Graphics}
+\cventry{2018}{}{}{}{}{Hacking Health Camp: Developed an automatic image-based french sign language translator \\ \textit{Awarded best potential for success} \\ \textbf{C++} -- \textbf{Python} -- \textbf{Deep-Learning} -- \textbf{Tensorflow}}
 
 %----------------------------------------------------------------------------------------
 %	AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Awards}
+\section{Scientific communications}
 
-\cvitem{2016}{Master Degree - Top of the class}
-\cvitem{2018}{Hacking Health Camp - \textit{Best potential for sucess} - Face2Sign: Image-based sign langage translator}
+\cvitem{2019}{Ouhmich, F., Agnus, V., Noblet, V. et al. \newline \textit{Liver tissue segmentation in multiphase CT scans using cascaded convolutional neural networks}. Int J CARS 14, 1275--1284. \newline \url{https://doi.org/10.1007/s11548-019-01989-z}}
+\cvitem{2019}{Oral Communication -- CARS}
+\cvitem{2019}{Wakabayashi, T., Ouhmich, F., Gonzalez-Cabrera, C. et al. \newline \textit{Radiomics in hepatocellular carcinoma: a quantitative review}. Hepatol Int 13, 546--559 (2019). \newline \url{https://doi.org/10.1007/s12072-019-09973-0}}
+\cvitem{2020}{Dana, J., Agnus, V., Ouhmich, F., \& Gallix, B. \newline \textit{Multimodality Imaging and Artificial Intelligence for Tumor Characterization: Current Status and Future Perspective}. Seminars in Nuclear Medicine. \newline \url{https://doi.org/10.1053/j.semnuclmed.2020.07.003}}
+\cvitem{2019}{Abstract SAGES 2nd author -- \textit{Computing Biopsy: Machine-learning-triggered radiomics evaluation of hepatic tumor}}
+
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Computer skills}
+\section{Technical skills}
 
-\cvitem{Basic}{\textsc{java}, Adobe Illustrator}
-\cvitem{Intermediate}{\textsc{python}, \textsc{html}, \LaTeX, OpenOffice, Linux, Microsoft Windows}
-\cvitem{Advanced}{Computer Hardware and Support}
+\cvitem{Computer Science}{Programming languages: In-depth knowledge of \textbf{C}, \textbf{C++}, \textbf{Python} \newline In-depth knowledge of semantic segmentation deep neural networks: \textbf{FCN}, \textbf{U-Net}, \textbf{Residual Network}, \textbf{Recurrent Network}, \textbf{LSTM} \newline Deep Learning frameworks (\textbf{Tensorflow}, \textbf{Keras}, \textbf{PyTorch}, \textbf{Mlflow}) \newline Knowledge of \textbf{Qt}, \textbf{OpenGL}, \textbf{OpenCV}, \textbf{Ogre} \newline Distributed version control tools: \textbf{Git}, \textbf{Mercurial} \newline Followed \textit{Machine Learning course }from Andrew NG -- Coursera}
+\cvitem{Medical Imaging}{In-depth knowledge of human abdominal anatomy (\textbf{liver}, \textbf{colon}, \textbf{gallbladder}) \newline
+Thorough knowledge of medical imaging especially \textbf{CT}, \textbf{MR} and \textbf{US} \newline
+Experience with both \textbf{Nifti}, \textbf{VTK} and \textbf{Dicom} imaging formats \newline
+}
+
 
 %----------------------------------------------------------------------------------------
 %	COMMUNICATION SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
-
-\cvitem{2010}{Oral Presentation at the California Business Conference}
-\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
+%\section{Communication Skills}
+%
+%\cvitem{2010}{Oral Presentation at the California Business Conference}
+%\cvitem{2009}{Poster at the Annual Business Conference in Oregon}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
@@ -166,9 +176,9 @@ deformation of a perfusion map for an augmented reality application.
 
 \section{Languages}
 
-\cvitemwithcomment{English}{Mothertongue}{}
-\cvitemwithcomment{Spanish}{Intermediate}{Conversationally fluent}
-\cvitemwithcomment{Dutch}{Basic}{Basic words and phrases only}
+\cvitemwithcomment{French}{Mothertongue}{}
+\cvitemwithcomment{English}{Fluent}{TOEIC -- 935 (Dec 2019)}
+\cvitemwithcomment{German}{Intermediate}{}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
@@ -178,9 +188,35 @@ deformation of a perfusion map for an augmented reality application.
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvlistdoubleitem{Piano}{Chess}
-\cvlistdoubleitem{Cooking}{Dancing}
-\cvlistitem{Running}
+\cvlistdoubleitem{Sports(badminton, football)}{Reading}
+
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+\newpage
+
+\section{References}
+
+
+\cvitem{Julien Lamy}{Research engineer in Computer Science \newline
+ex-teacher at the University of Strasbourg \newline
+ICube -- CNRS\newline
+lamy@unistra.fr\newline
++333 68 85 40 40
+}
+
+\cvitem{Vincent Agnus}{Head of research \newline
+Orthogrid \newline
+vincent.agnus@gmail.com
+}
+
+\cvitem{Juan Verde}{Preclinical research manager\newline
+IHU Strasbourg \newline
+jverde.md@gmail.com
+}
+
 
 %----------------------------------------------------------------------------------------
 
